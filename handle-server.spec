@@ -74,4 +74,3 @@ fi
 exit 0
 
 %changelog
-* initial version
