@@ -1,4 +1,4 @@
-create table handles (
+create table if not exists handles (
   handle varchar(255) not null,
   idx int4 not null,
   type blob,
@@ -12,4 +12,4 @@ create table handles (
   pub_read bool,
   pub_write bool,
   PRIMARY KEY(handle, idx)
-); 
+);
