@@ -5,7 +5,7 @@ Version: 0.1
 Release: X
 BuildArch: noarch
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
-Requires: jre,mysql,mysql-devel,mysql-server
+Requires: jre
 Source: %{name}.tar.gz
 
 %description
