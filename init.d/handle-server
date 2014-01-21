@@ -17,14 +17,13 @@ lock_file="/var/lock/subsys/$SCRIPT"
 do_start()
 {
         if [ ! -f "$lock_file" ] ; then
-                touch $lock_file
                 echo -n $"Starting $SCRIPT: "
                 $COMMAND >> /var/log/handle-server/${SERVER}.log 2>&1 &
                 RETVAL=$?
                 if [ $RETVAL -eq 0 ]; then
+                  touch $lock_file
                   echo_success
                 else
-                  rm -f $lock_file
                   echo_failure
                 fi
                 echo
