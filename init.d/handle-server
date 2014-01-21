@@ -1,60 +1,82 @@
 #!/bin/sh
 #
-# chkconfig: 345 80 20
+# chkconfig: 345 98 02
 # description: Handle server
-# processname: handle-server
 #
-# P@ Aug '08
-if [ -x /etc/rc.d/init.d/functions ]; then
 . /etc/rc.d/init.d/functions
-fi
+
+SCRIPT="$(basename $0)"
 
 JAVA="/usr/bin/java"
 PROJ_DIR="/opt/handle-server"
 SERVER="svr_1"
+COMMAND="$JAVA -cp ${PROJ_DIR}/bin/handle.jar:${PROJ_DIR}/bin/mysql-connector-java-3.1.7-bin.jar net.handle.server.Main ${PROJ_DIR}/${SERVER}"
 
-start() {
-  echo -n "Starting handle server: "
+lock_file="/var/lock/subsys/$SCRIPT"
 
-  ${JAVA} -cp ${PROJ_DIR}/bin/handle.jar:${PROJ_DIR}/bin/mysql-connector-java-3.1.7-bin.jar net.handle.server.Main ${PROJ_DIR}/${SERVER} >> /var/log/handle-server/${SERVER}.log 2>&1 &
-
-  RETVAL=$?
-
-  return $RETVAL
+do_start()
+{
+        if [ ! -f "$lock_file" ] ; then
+                touch $lock_file
+                echo -n $"Starting $SCRIPT: "
+                $COMMAND >> /var/log/handle-server/${SERVER}.log 2>&1 &
+                RETVAL=$?
+                if [ $RETVAL -eq 0 ]; then
+                  echo_success
+                else
+                  rm -f $lock_file
+                  echo_failure
+                fi
+                echo
+        else
+                echo "$SCRIPT is locked."
+                RETVAL=1
+        fi
 }
 
-stop() {
-  echo -n "Stopping handle server: "
-
-  ps -ef | grep "[h]andle-server" | awk '{print $2}' | xargs kill
-
-  RETVAL=$?
-
-  return $RETVAL
+do_stop()
+{
+        echo -n $"Stopping $SCRIPT: "
+        pkill -9 -fx "$COMMAND" > /dev/null 2>&1
+        RETVAL=$?
+        if [ $RETVAL -eq 0 ]; then
+          rm -f $lock_file
+          echo_success
+        else
+          echo_failure
+        fi
+        echo
 }
 
-status() {
-  ps -ef | grep "[h]andle-server"
+do_status()
+{
+        PID=`pgrep -fx "$COMMAND"`
+        RETVAL=$?
+        if [ $RETVAL -eq 0 ]; then
+          echo "$SCRIPT is running"
+        else
+          echo "$SCRIPT is not running"
+        fi
 }
 
 case "$1" in
-  start)
-        start
-        ;;
-  stop)
-        stop
-        ;;
-  status)
-        status
-        ;;
-  restart)
-  stop
-  sleep 2
-  start
-  ;;
-  *)
-  echo "Usage: handle-server {start|stop|restart|status}"
-  exit 1
+        start)
+                do_start
+                ;;
+        stop)
+                do_stop
+                ;;
+        restart)
+                do_stop
+                do_start
+                ;;
+        status)
+                do_status
+                ;;
+        *)
+                echo "Usage: $0 {start|stop|restart|status}"
+                RETVAL=1
 esac
 
 exit $RETVAL
+
