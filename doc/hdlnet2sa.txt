@@ -1,0 +1,404 @@
+HANDLE SYSTEM SERVICE AGREEMENT (Ver. 3)
+
+This HANDLE SYSTEM® SERVICE AGREEMENT (Ver. 3) ("Service Agreement")
+is between Corporation for National Research Initiatives ("CNRI"),
+having an office at 1895 Preston White Drive, Reston, VA 20191-5434,
+and the Individual or Organization that has entered into the HANDLE
+SYSTEM PUBLIC LICENSE AGREEMENT ("HSPL") and registered with CNRI as
+a Resolution Service Provider ("RSP") (known collectively as the
+"Parties"). This Service Agreement is effective as of the date of
+signature by RSP as provided herein (the "Effective Date") and is
+subject to the terms and conditions of the HSPL entered into and
+maintained in effect between the Parties.
+
+1. Prefix(es). CNRI hereby authorizes RSP to provide identifier and/or
+resolution services only with respect to identifiers that start with
+the prefix or prefixes allotted to RSP by CNRI, subject to the terms
+of this Service Agreement. It is agreed by the Parties that any prefix
+allotted to RSP hereunder may not be used to disrupt the integrity or
+operation of the Handle System in any manner. All identifiers created
+with each RSP prefix shall be resolvable by RSP's resolution service.
+The CNRI Handle System Administrator will notify RSP of the prefix or
+prefixes allotted to RSP and register each such prefix in the Global
+Handle Registry® ("GHR"). This notification will be sent by
+electronic mail to the Administrator designated by RSP for each prefix.
+
+RSP acknowledges and agrees that the authority granted to RSP to use the
+prefix(es) allotted to it by CNRI hereunder, is personal to RSP and that
+this authority may not be assigned or transferred by RSP to any other
+party without the prior written consent of CNRI. Without limiting the
+generality of the preceding sentence, RSP further acknowledges that the
+allotment of a prefix to RSP by CNRI, as provided herein, confers no
+property, ownership or proprietary rights on RSP with respect to such
+prefix.
+
+Other than the information provided by the GHR in ordinary resolution
+requests, the collection of administrative data associated with each
+prefix is considered confidential by CNRI and will not be released in
+any form unless ordered by a court or governmental agency of competent
+jurisdiction, or unless otherwise agreed to in writing signed by the
+Parties. Administrative data, other than RSP's account information,
+that have been received by CNRI from RSP and are required to maintain
+the overall integrity of the GHR shall be retained in the GHR.
+
+2. Policies & Procedures. RSP hereby agrees that the use of the Handle
+System technology, including the running of HANDLE.NET® software, and
+any RSP deposit data, administrative data, or prefix data that have been
+entered into the Global Handle Registry shall be subject to the Handle
+System Policies & Procedures ("Policies") that are posted at
+http://hdl.handle.net/4263537/5012 as of the Effective Date and are
+incorporated herein by reference. RSP agrees to make reasonable good
+faith efforts to provide identifier and/or resolution services in
+accordance with the Policies.
+
+The Policies may, from time to time, be modified by CNRI, including as
+a result of consultation with interested bodies, including the Handle
+System Advisory Committee. Any such modifications to the Policies
+made and posted at http://www.handle.net/ during a given Term shall
+become effective for Licensee on the next following renewal date of
+the Service Agreement, unless otherwise agreed upon in writing by the
+Parties.
+
+In the event RSP is unable or no longer intends to provide identifier
+and/or resolution services for identifiers starting with the prefix
+or prefixes allotted to RSP by CNRI, RSP shall promptly notify CNRI
+and shall take steps to find an appropriate alternate party to provide
+such identifier and/or resolution services and notify the Handle System
+Administrator of the alternate party. If CNRI, in its sole discretion,
+consents to the alternate party, then once the alternate party is
+authorized by CNRI to use the Handle System technology and enters into
+a Service Agreement with CNRI to act as a RSP, the relevant set of
+records shall be transferred by RSP to that alternate party for such
+identifier and/or resolution purposes. Unless otherwise agreed to in
+writing between CNRI and RSP, if no alternate party is designated by
+RSP, RSP agrees that CNRI, at its sole discretion, may elect to
+provide such services itself, or through another party, or may
+record and/or otherwise make known that the relevant identifiers, if
+any, are no longer resolvable.
+
+3. Fees. In consideration for the Handle System services provided
+by CNRI under this Service Agreement, RSP will pay the following fees
+to the Handle System Administrator:
+
+     -o- For a single allotted prefix, a one-time registration fee of
+$50 ("Registration Fee"), plus an annual service fee of $50 ("Annual
+Service Fee"). For prefixes derived from the single allotted prefix,
+the Registration Fee shall be waived if the RSP remains the same;
+however, the Annual Service Fee shall apply for each derived prefix.  
+
+     -o- For each additional consecutive twelve-month period after
+the first year, there is no Registration Fee, only the Annual Service
+Fee. The amount of the Annual Service Fee may be reasonably adjusted
+by CNRI from time to time.
+
+     -o- In addition to the one-time Registration Fee of $50, 
+the RSP may choose from one of two prepayment options for the 
+Annual Service Fee.  Five years of $50 per year service fees may be 
+prepaid for a total of $250, and ten years may be prepaid at a 
+discounted fee of $425.
+
+     -o- CNRI reserves the right to waive the Registration Fee and/or
+Annual Service Fee on a case-by-case basis at its sole discretion. A
+request for waiver shall include the reasons for such request and
+shall be made in writing addressed to the Handle System Administrator
+at hdladmin@cnri.reston.va.us.
+
+4. Technical Support. CNRI personnel will provide RSP via electronic
+mail with occasional consultation on routine technical matters during
+CNRI's normal business hours during the Term of this Service Agreement,
+and RSP will inform CNRI of the RSP technical point of contact for
+this purpose. At its sole discretion, CNRI may provide additional
+technical assistance to RSP under a separately negotiated Technical
+Support Agreement.
+
+5. GHR Services. In accordance with the terms of this Service
+Agreement, CNRI shall make reasonable efforts to provide RSP with
+reliable Global Handle Registry services on a 24-hour, 7-day a week
+basis and to maintain the overall operational integrity of the
+Handle System. It is understood and agreed, however, that, unless
+otherwise agreed in writing by the Parties, CNRI does not guarantee
+any specific level of GHR availability and performance.
+
+Without limiting the preceding sentence, CNRI shall not be liable for
+any GHR availability or performance failures or delays in the
+performance of any of its obligations hereunder due to causes beyond
+its reasonable control (force majeure condition), including, but not
+limited to, fire, strike, war, riots, terrorism, judicial action,
+shortages of labor, materials or equipment, failures or delays in
+delivery by CNRI's vendors or suppliers. If, despite the reasonable
+efforts of CNRI and RSP, the force majeure condition persists beyond
+sixty (60) days, either CNRI or RSP may send a written notice to the
+other terminating this Service Agreement.
+
+6. Disclaimer. CNRI IS MAKING THE HANDLE SYSTEM TECHNOLOGY AND SERVICES
+AVAILABLE TO RSP HEREUNDER ON AN "AS IS" BASIS. CNRI EXPRESSLY
+DISCLAIMS AND EXCLUDES ALL WARRANTIES (INCLUDING WITHOUT LIMITATION
+MERCHANTABILITY, SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR
+PURPOSE OR USE) AND REPRESENTATIONS, WHETHER EXPRESS OR IMPLIED, IN
+RELATION TO RSP'S USE OF THE HANDLE SYSTEM TECHNOLOGY, INCLUDING
+SOFTWARE, INFORMATION, AND PREFIX(ES), OR IN RELATION TO CNRI'S
+PERFORMANCE OF ANY SERVICES IN CONNECTION WITH THE HANDLE
+SYSTEM.
+
+7. Limitation of Liabilities. CNRI WILL NOT BE LIABLE TO RSP OR TO ANY
+THIRD PARTY (INCLUDING WITHOUT LIMITATION USERS OF RSP IDENTIFIER AND/OR
+RESOLUTION SERVICES), FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL,
+CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY CHARACTER
+INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES, LOSS OF USER DATA OR PROFITS, OR BUSINESS INTERRUPTION,
+HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT
+(INCLUDING BUT NOT LIMITED TO NEGLIGENCE AND INFRINGEMENT OR
+MISAPPROPRIATION OF INTELLECTUAL PROPERTY RIGHTS), PRODUCT LIABILITY
+OR OTHERWISE, BASED ON OR ARISING IN ANY WAY OUT OF THE PERFORMANCE OF
+THE RIGHTS AND OBLIGATIONS OF THE PARTIES UNDER THIS AGREEMENT, EVEN
+IF CNRI IS ADVISED OR IS OTHERWISE AWARE OF THE POSSIBILITY OF SUCH
+DAMAGES. RSP AGREES THAT THE ENTIRE LIABILITY OF CNRI WILL IN NO
+EVENT EXCEED AN AMOUNT EQUAL TO THE FEE PAID BY RSP UNDER THIS
+SERVICE AGREEMENT.
+
+8. Indemnification. RSP shall indemnify, defend, and hold CNRI harmless
+for and against all claims for personal injury, property damage, loss of
+profits, loss of use, or any indirect, consequential, punitive or
+special damages, whether based upon a claim or action in contract,
+warranty, negligence, or other tort, based on or arising out of or
+relating to RSP's provision of services pursuant to this Service
+Agreement.
+
+9. Term & Termination. The term of this Service Agreement shall be for
+an initial one (1) year period which shall begin on the Effective Date
+of this Service Agreement ("Term"), and the Term shall automatically be
+extended for successive periods of one (1) year each, unless (a) either
+Party provides written notice to the other Party at least ninety (90)
+days prior to the renewal date that the Service Agreement shall not be
+renewed, (b) otherwise agreed in writing, or (c) terminated by CNRI, at
+its sole discretion, upon a material breach of this Service Agreement by
+RSP. Parties that wish to have the Service Agreement extended for longer
+periods may request extensions for successive periods of up to five (5)
+years each and, if approved, the service fees shall be adjusted
+accordingly. Following termination of the Service Agreement, the records
+and other data associated with RSP prefix or prefixes may be maintained
+by CNRI in the GHR, at CNRI's sole discretion, at no fee to RSP.
+Further, it is understood and agreed that, following termination of
+the Service Agreement, unless otherwise agreed in writing by the
+Parties, CNRI is under no obligation to provide Global Handle Registry
+services for prefix(es) previously allotted to RSP, and, at its sole
+discretion, CNRI may re-allot any or all of such prefix(es) to another
+party, who may thereafter use the same to provide identifier and/or
+resolution services.
+
+10. Trademarks. Handle System, Global Handle Registry, Handle.net and
+CNRI are registered trademarks of CNRI, and CNRI may have or adopt
+other marks related to the Handle System technology and services
+described herein ("CNRI Trademarks"). The CNRI Trademarks may not
+be used to endorse or promote any software, services or products of
+Licensee, or any third party, except with prior written approval of
+CNRI, which it may grant or deny at its sole discretion. Inquiries
+concerning use of CNRI's Trademarks should be addressed to the
+Handle System Administrator at hdladmin@cnri.reston.va.us.
+
+ 11. Miscellaneous provisions.
+
+     a. This Service Agreement is transferable by CNRI provided that
+CNRI transfers and assigns all rights necessary to allow the transferee
+to fully perform CNRI's obligations hereunder, and that the transfer is
+to an organization that has agreed to operate the Handle System in the
+public interest. This Service Agreement is personal to RSP and, without
+prior written consent from CNRI, which consent may be granted or
+withheld in CNRI's sole discretion, shall not be assigned by any act of
+RSP, including without limitation, sale, merger, or other transfer of
+assets by RSP, bankruptcy, or by operation of law. Any purported
+transfer or assignment without CNRI's prior written consent shall be
+deemed a material breach of this Service Agreement.
+
+     b. In the event that RSP breaches this Service Agreement, CNRI and
+RSP agree that damages will not provide an adequate remedy for CNRI.
+Therefore, in the event of a breach or threat of breach, RSP
+acknowledges that CNRI shall be entitled to obtain injunctive relief,
+in addition to any other relief available at law or equity.
+
+     c. To the extent Federal law is not applicable, this Service
+Agreement shall be governed by and interpreted in all respects by the
+law of the Commonwealth of Virginia, excluding Virginia conflict of law
+provisions, and the courts within such State shall be the only courts
+of competent jurisdiction. Nothing in this Service Agreement shall be
+deemed to create any relationship of agency, partnership, or joint
+venture between the Parties.
+
+HANDLE SYSTEM POLICIES & PROCEDURES
+
+(as of September 21, 2005)
+
+a. Overview
+
+The Handle System® is a component of the Digital Object Architecture
+developed by CNRI. It provides a means for uniquely identifying Digital
+Objects ("DOs") and other network resources, and for using the
+identifiers to store and retrieve records containing state information
+about the DOs. It also provides an administrative mechanism for managing
+identifiers over time.
+
+The term Digital Object is used to denote structured data in the form
+of a set of bit sequences thatcan be interpreted by a computer or other
+computational facility.  Each sequence consists of a type-value pair,
+at least one of which is the identifier for the DO. The sequences need
+not all be stored in one place, or stored at all, but if they are
+stored, they are generally assumed to be accessible from one or more
+known locations.
+
+One form of state information is the location(s) of the DO. Another
+form is selected metadata about the DO, generally known as key metadata.
+Type information is an example of key metadata. Type information itself
+is stored as DOs and can be retrieved by a formula that converts type
+strings into identifiers.  Types used in identifier records must be
+resolvable in the Global Handle Registry® ("GHR"). The types intended
+for general use by the public are stored in the GHR, but may also be
+stored by a Resolution Service Provider ("RSP"), if desired.
+
+Each identifier consists of a prefix and a suffix separated from the
+prefix by a slash "/". The prefix is not permitted to contain a slash;
+and the suffix may be any string selected by the Administrator for that
+prefix. The top level of the Handle System, known as the Global Handle
+Registry, contains all the prefixes, and may contain all, some or none
+of the identifier records associated with each prefix. Prefixes derived
+from allotted prefixes are known as derived prefixes. Each derived
+prefix is also considered an allotted prefix, and, unless otherwise
+authorized by the Handle System Administrator, each such derived prefix
+must be registered in the GHR.
+
+Specific prefixes have been reserved by the Handle System Administrator
+for certain general categories. Apart from such prefixes, prefixes shall
+generally be allotted in order beginning with unassigned five digit
+numbers and increasing thereafter.
+
+RSPs may wish to operate identifier and/or resolution systems using the
+Handle System technology that have different interface specifications.
+To operate such a system, RSP must request a waiver from the Handle
+System Administrator of the requirement that RSP services be compatible
+with the Handle System interface specification. As part of the
+registration procedure, RSP should request such a waiver and provide
+the requested information necessary for the GHR to have an effective
+means of responding to resolution requests relating to RSP's alternative
+identifier and/or resolution system. There may be additional fees
+associated with the registration process in this case. The GHR will
+allocate a prefix (or its functional equivalent) for the
+alternative system that will be used by the GHR to respond to
+resolution requests involving the alternative system. The Handle
+System Administrator will work with RSP to install the alternative
+interface software in the GHR. Compliance with these procedures will
+enable interoperability with the Handle System, even though the
+interface specifications may differ.
+
+Information about the Handle System has been documented in IETF RFCs
+3650, 3651, and 3652 which may be found at the Handle System Internet
+site: http://www.handle.net. This work was supported in part by the
+Defense Advanced Research Projects Agency under Grant No.
+MDA 972-99-1-0018 and Grant No. MDA 972-92-J-1029.
+
+b. General Service Considerations
+
+Each Resolution Service Provider shall maintain a reasonable
+quality of service, including, but not limited to, the following
+considerations:
+
+     -o- Compatibility and smooth interaction among RSP system
+components, and the interaction of those components with the GHR as
+well as with users of RSP's identifier and/or resolution services;
+
+     -o- Consistency and reliability in service performance;
+
+     -o- Proper system management and performance tracking;
+
+     -o- Non-interrupted access to/from the GHR; and
+
+     -o- Overall system security.
+
+In the event RSP enters into an agreement with a third party to provide
+its identifier and/or resolution services using a prefix allotted to
+RSP, or derived from such prefix for which the RSP has paid the
+requisite fee, the third party is not required to enter into a separate
+service agreement with CNRI for this purpose, but must register with
+CNRI and agree to be bound by the Handle System Public License. In
+addition, RSP shall flow down in its agreement with the third party the
+applicable terms and conditions of its service agreement with CNRI, it
+being understood that responsibility for fulfilling the obligations of
+the service agreement remain with RSP.
+
+c. Specific Operational Considerations for an RSP
+
+Resolution of an identifier with a given prefix produces an identifier
+record containing state information, such as location information for
+RSP services.
+
+Accordingly, RSP shall:
+
+     -o- Maintain all such identifier records at a single identifying
+address (e.g., IP Address, service identifier or other system
+coordinates), which shall be provided by the RSP Administrator to the
+Handle System Administrator, and which is sufficient to permit the GHR
+to redirect a client application to the RSP service where the
+identifier records will be resolved;
+
+     -o- Provide identifier and/or resolution services at the single
+identifying address for RSP's identifier records; such services shall
+be limited to those that are under the common ownership and control
+of RSP;
+
+     -o- Provide secure maintenance of Private Keys by each RSP
+Administrator; and
+
+     -o- Provide timely reports to the Handle System Administrator
+(hdladmin@cnri.reston.va.us) of service configuration changes, such
+as RSP moving its current identifier and/or resolution services
+location.
+
+If RSP wishes to provide services that do not meet the criteria listed
+above, RSP should contact the Handle System Administrator to request
+permission for alternate arrangements, and CNRI, at its sole discretion,
+reserves the right to determine whether to permit such services. For
+example, RSP may wish to operate its identifier and/or resolution
+services ("RSP Services") using multiple components (e.g., multiple
+machines, multiple software instances or mobile programs), where each
+component has its own identifying address. Specifically, an RSP may
+wish to run a single resolution service, using a single prefix, where
+the identifier records are distributed across multiple identifying
+addresses, or, where a single IP address is used with different network
+ports. In such cases, RSP shall provide to the Handle System
+Administrator sufficient information about the separate components of
+RSP Services; and additional charges may apply.
+
+If RSP wishes to operate private identifier and/or resolution services
+(such as services maintained behind a firewall that are not publicly
+accessible), it must so notify the Handle System Administrator in
+advance. Upon notification, RSP's prefix(es) will be retained in the
+GHR, which will provide resolution information to the extent such
+information is made available to it by RSP. If no such information
+is provided by RSP, the GHR will state that identifiers beginning
+with RSP's prefix(es) are not publicly resolvable.
+
+RSPs that wish to allocate derived prefixes to themselves or to third
+parties for purposes of providing identifier and/or resolution services,
+and not have such derived prefixes known to the GHR, must notify the
+Handle System Administrator for approval at the time of registration,
+or any time thereafter, provided that such notification is received
+and approved prior to using such derived prefixes. Permission for such
+delegation of authority will generally involve qualification of the RSP
+making the request, payment of additional service fees and compliance
+with procedures commensurate with such delegation of authority. Since
+these derived prefixes will not be known to the GHR, the RSP generating
+them must agree to provide resolution services for these prefixes and to
+maintain all the necessary information to assure that identifiers
+beginning with these prefixes are resolvable.
+
+d. GHR Considerations
+
+Although identifiers may be resolved by the GHR, RSP will generally
+choose to resolve identifiers directly from its own service without
+using the GHR after it has registered and been given a prefix from
+the Handle System Administrator.
+
+In addition to each prefix and its related administrative data, RSP
+may, at CNRI's sole discretion, store a limited amount of additional
+identifier information in the GHR for resolution, backup or for other
+purposes under a separately negotiated Technical Support Agreement
+between CNRI and RSP.
+

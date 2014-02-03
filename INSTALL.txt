@@ -1,0 +1,170 @@
+HANDLE.NET (r) Version 7 Software
+
+You have agreed to the terms and conditions of the Handle System Public
+License. <http://hdl.handle.net/4263537/5030>
+To use the HANDLE.NET software to provide identifier and/or resolution
+services you must agree to the terms and conditions of the Handle
+System Service Agreement <http://hdl.handle.net/4263537/5029>.
+
+
+UPGRADING FROM AN EARLIER VERSION
+
+In version 7, we have provided a script 'hdl-server', located in the 'bin'
+directory of the distribution, which should be run to start the handle server.
+The script takes a single argument, the handle server directory.
+
+(The command used in version 6 to start the handle server will not work,
+as multiple Java jar files are now required to run the server.)
+
+There are no changes required in the configuration of your handle server.
+
+
+INSTALL.txt
+
+How to Install the HANDLE.NET (version 7.3) software:
+
+NOTE: The HANDLE.NET server should not be installed inside a firewall
+unless the handle ports (default ports are tcp:2641, tcp:8000, and
+udp:2641) are opened for all incoming and outgoing messages.
+
+PLEASE FOLLOW THESE STEPS IN ORDER.
+1) Install Java version 5 or greater on your computer.  Note: if Java is
+   already on your computer, type 'java -version' at the command prompt to
+   find out what version has been installed.
+
+2) Unpack the handle system distribution into a directory on your
+   computer.  For the rest of these instructions, we will assume this
+   directory is /hs/hsj-7.3/.
+
+3) Choose a directory that will hold the configuration and data for
+   this server.  For the rest of these instructions we will use the
+   /hs/svr_1 directory. Be sure to create a new directory for each
+   server on the same machine. To create this directory on unix, run
+   this command:
+     mkdir -p /hs/svr_1
+
+4) To set up and configure a new or existing server, run the following
+   command.
+      On Unix-like systems:
+        /hs/hsj-7.3/bin/hdl-setup-server /hs/svr_1
+
+      On Windows systems:
+        \hs\hsj-7.3\bin\hdl-setup-server.bat \hs\svr_1
+
+   Both installation programs will prompt you for your server's IP address
+   and the port(s) the server will listen to. By default, the HANDLE.NET
+   software will bind to the following ports:
+     TCP: 2641 and 8000
+     UDP: 2641
+
+   There should not be any other servers listening to these ports.
+
+   Be sure to remember the passphrase you used for both the server
+   Certification and Administration. You will need the server
+   Certification passphrase to start your server and you will need the
+   Administration passphrase to load your private key which is
+   necessary for authentication when creating and modifying
+   identifiers in your service.
+
+5) Once the configuration file has been generated, you will need to
+   upload the generated sitebndl.zip file to the CNRI Handle System
+   Administrator (hdladmin@cnri.reston.va.us). First go to
+   (<http://hdl.handle.net/4263537/5014>) to register to become a
+   resolution service provider and then upload your file.  Also please
+   read and agree to the Handle System Service Agreement
+   (<http://hdl.handle.net/4263537/5029>) and pay the associated fees
+   for your prefix.  Note: if you have already registered go to
+   (<http://hdl.handle.net/4263537/5032>) to upload your configuration
+   file.
+
+   The Administrator will then create the prefix on the root service
+   (known as the Global Handle Registry(GHR)), and notify you when
+   this has been completed.  You will not be able to continue the
+   install until you receive further information concerning your
+   prefix.
+
+   ONCE YOU RECEIVE YOUR PREFIX INFORMATION FROM HDLADMIN THEN
+   PROCEED WITH THE FOLLOWING STEPS TO 'HOME' YOUR PREFIX TO YOUR
+   NEW SERVICE.
+
+6) Go to your svr_1 directory(where you installed the software) and
+   edit the config.dct file. Replace the words "YOUR_NAMING_AUTHORITY"
+   under "server_admins" and "replication_admins" with your naming
+   authority/prefix (as indicated in your email message from
+   hdladmin). This allows anyone with the private key that matches
+   your public key to be an Administrator for your identifier and/or
+   resolution services.
+
+7) Start your HANDLE.NET server using the configuration generated in step 4.
+   This can be done with the following command:
+
+      On Unix-like systems:
+        /hs/hsj-7.3/bin/hdl-server /hs/svr_1
+
+      On Windows systems:
+        \hs\hsj-7.3\bin\hdl-server.bat \hs\svr_1
+
+   Note: If you chose to encrypt your private key(s), you will be
+   prompted for your passphrase here. Also note that Java does not
+   have the ability to disconnect from a terminal so you will have to
+   put the process in the background. On Unix systems press Ctrl-Z
+   then bg then press Enter.
+
+   For testing purposes you can use a web browser to connect to your
+   server by opening the URL http://<your-IP-address>:8000/ where
+   "your-IP-address" is the address that was entered in the setup
+   process.
+
+8) Start the Handle Tool using the following command.
+
+      On Unix-like systems:
+        /hs/hsj-7.3/bin/hdl-admintool
+
+      On Windows systems:
+        \hs\hsj-7.3\bin\hdl-admintool.bat
+
+   Please see Chapter 3.2 of the Technical Manual
+   (<http://hdl.handle.net/4263537/5031>) on how to run the tool.
+
+9) Choose the menu option Tools -> Home/Unhome Prefix.
+
+   In the Prefix box enter 0.NA/Your_prefix.
+
+   Under "By Site Info File (siteinfo.bin)" click "Choose File..." and
+   select the siteinfo.bin file in your handle server directory:
+   /hs/svr_1/siteinfo.bin
+
+   Once your server is contacted, you will be prompted for authentication.
+
+   Next to 'Your ID' put 0.NA/Your_prefix in the first box,
+   and 300 in the second.
+
+   The 'Key Type' should be 'Public/Private Key'.
+
+   Click 'Select Key File' to browse to your private key file.
+   It will be in the /hs/svr_1 directory (where you installed your
+   server) and is named admpriv.bin.
+
+   You will be prompted for your passphrase.  This is the password you
+   entered for Administration when you ran hdl-setup-server.
+
+   This may take a minute to process.
+
+   You should receive a successful message, and now you are ready to
+   create handles in your local HANDLE.NET instance.  To create
+   handles, enter the new handle in the Handle Tool and click the
+   "Create..." button.  Your authentication information can be your
+   public/private key pair that was used for homing your prefix.
+   Remember each handle requires an administrator.
+
+   You can now Add, Edit, and Remove values from the new handle;
+   click "Create Handle" when this is complete.
+
+   For complete documentation on HANDLE.NET version 7.3 please refer
+   to the Technical Manual (<hdl.handle.net/4263537/5031>).
+
+10) Please send all comments, questions and bug reports to
+   hdladmin@cnri.reston.va.us.
+
+
+Thank you for your interest in CNRI's HANDLE.NET software.

@@ -1,0 +1,195 @@
+HANDLE SYSTEM(R) PUBLIC LICENSE AGREEMENT (Ver. 2) 
+ 
+IMPORTANT: PLEASE READ THE FOLLOWING LICENSE AGREEMENT CAREFULLY. THIS 
+LICENSE AGREEMENT APPLIES TO THE USE OF HANDLE SYSTEM TECHNOLOGY, 
+WHETHER OR NOT YOU USE THE HANDLE.NET SOFTWARE. IT IS ALSO IMPORTANT TO 
+READ THE HANDLE SYSTEM SERVICE AGREEMENT <http://hdl.handle.net/
+4263537/5029>. IT IS NECESSARY TO ENTER INTO A SERVICE AGREEMENT IF YOU
+INTEND TO PROVIDE IDENTIFIER AND/OR RESOLUTION SERVICES USING THE HANDLE
+SYSTEM TECHNOLOGY UNDER THIS HANDLE SYSTEM PUBLIC LICENSE AGREEMENT. 
+
+This Handle System Public License Agreement (Version 2) ("HSPL (Ver.2)")
+is between the Corporation for National Research Initiatives ("CNRI"), 
+having an office at 1895 Preston White Drive, Reston, VA 20191-5434, and
+the Individual or Organization ("Licensee") that has installed or 
+otherwise used the "Handle System Technology" (as defined below). 
+Licensee shall be deemed to have entered into, signed and agreed to be 
+bound by the terms and conditions of this HSPL (Ver.2) upon such access,
+installation or other use.
+ 
+1. CNRI Property Rights: CNRI and Licensee acknowledge that: 
+     
+     a. CNRI is the owner of U.S. Patent No. 6,135,646, and certain 
+additional pending U.S. patent applications that claim priority based on
+the filing date of the '646 patent (which patent and applications are 
+referred to collectively as "the Patents").
+ 
+     b. CNRI is also the owner of certain software known as 
+HANDLE.NET(R) and its associated documentation, and all intellectual 
+property rights therein including, but not limited to, copyright therein 
+(hereinafter "HDL Software").
+
+     c. CNRI has posted the Handle System interface specification at its 
+Internet site <http://www.handle.net/> and is the owner of copyright and 
+other rights therein ("Interface Specification"). 
+
+Collectively, the Patents, HDL Software and the Interface Specification
+are referred to herein as the "Handle System Technology." CNRI and 
+Licensee acknowledge and agree that the Handle System Technology has not 
+been especially made or especially adapted to use in combination with 
+any particular software or product. Accordingly, CNRI shall have no 
+liability for or in connection with Licensee's use of the Handle System 
+Technology in any such combination. 
+
+2. Grant of License: Subject to the terms and conditions set forth 
+herein, CNRI hereby grants to Licensee: 
+
+     a. A nonexclusive worldwide royalty free permission to install, 
+reproduce, modify, display and/or perform publicly and distribute HDL 
+Software to the public, with or without modification, in source or 
+binary form; and 
+	
+     b. A nonexclusive worldwide royalty free license under the 
+Patents, only to the extent necessary to permit (i) Licensee's exercise 
+of any of the rights granted in Section 2.a; and/or (ii) Licensee's 
+implementation or operation of an identifier and/or resolution service 
+using the Handle System Technology. 
+
+3.  Conditions of License: Any exercise of the rights granted herein 
+is subject to the following requirements:
+ 
+     a. Each module of HDL Software, and any software or other work 
+that is created by Licensee and is based on or includes all or any part 
+of HDL Software, whether retained by Licensee, or made available to 
+others, shall include CNRI's copyright notice and the following 
+resolvable link <http://hdl.handle.net/4263537/5030> to this HSPL 
+(Ver.2). Licensee shall also require all of its own licensees of any 
+such module, software, or other work to include the same copyright 
+notice and link in all works of such further licensees that are based 
+on or include all or any part of HDL Software. 
+
+     b. Licensee may not exercise any of the rights granted herein for 
+or in connection with the establishment or operation by Licensee alone,
+or in cooperation with any other person, of a system of identifier 
+and/or resolution services that disrupts the integrity of the Handle 
+System in any manner. Subject to and without limiting the generality of 
+the preceding sentence, Licensee shall not, without the express prior 
+approval and written consent of CNRI, establish or operate, through the 
+exercise of any rights granted herein, any system of identifier and/or 
+resolution services that: (i) is incompatible with the Handle System 
+Interface Specification; (ii) uses prefixes (or their functional 
+equivalent) that are not authorized by CNRI or that are not known to 
+the Global Handle Registry(R) ("GHR"), the top level of the Handle 
+System; or (iii) resolves identifiers for which the GHR has no 
+effective means of responding to resolution requests relating to 
+Licensee's identifier and/or resolution services. CNRI may grant or
+withhold the approval and consent referred to in the preceding 
+sentence in its sole discretion. 
+	
+     c. In the event that Licensee alone, or in cooperation with any 
+other party, wishes to provide identifier and/or resolution services 
+that use or are based on the Handle System Technology, whether or not 
+Licensee uses HDL Software, then as a material condition of this HSPL 
+(Ver.2), Licensee must register with CNRI and enter into and maintain 
+in effect a HANDLE SYSTEM SERVICE AGREEMENT ("Service Agreement") 
+with CNRI. Service Agreement information is located at 
+<http://hdl.handle.net/4263537/5029>.  Except as otherwise provided 
+for herein, or in the Service Agreement, Licensee may not exercise any 
+of the rights granted herein, alone or in cooperation with any other 
+person, to generate prefixes (or their functional equivalent), for its 
+own use or for use by third parties, without prior authorization 
+from CNRI. 
+	
+     d. Licensee shall incorporate the following IMPORTANT NOTICE, 
+in a prominently visible way, in all Licensee software or product 
+release materials that are based on or use the Handle System 
+Technology, whether or not the software or product incorporates HDL 
+Software in whole or in part: 
+
+IMPORTANT NOTICE 
+This <identify Licensee's software or product here> has been developed 
+and is made available pursuant to the terms of the Handle System Public 
+License Agreement (Ver. 2) ("HSPL (Ver.2)") from Corporation for 
+National Research Initiatives ("CNRI"). By installing, or otherwise 
+using this <identify Licensee's software or product here>, you will be 
+deemed to have entered into, signed and agreed to be bound by the terms 
+of this HSPL (Ver.2)  <http://hdl.handle.net/4263537/5030>. PLEASE NOTE: 
+under the terms of the HSPL (Ver.2), if you intend to provide identifier 
+and/or resolution services using the Handle System Technology, whether 
+or not you use this <identify Licensee's software or product> for this 
+purpose, you must first register with CNRI and enter into and maintain 
+in effect a HANDLE SYSTEM SERVICE AGREEMENT ("Service Agreement"), 
+available at <http://hdl. handle.net/4263537/5029>. 
+
+     e. If Licensee institutes litigation against any entity 
+(including a cross-claim or counterclaim in a lawsuit) alleging that the 
+Handle System Technology infringes Licensee's patent, copyright, trade 
+secret or other proprietary right, then this HSPL (Ver.2) and any rights 
+granted hereunder, shall automatically terminate as of the date such 
+litigation is filed.
+ 
+4. Updates to Handle System Technology: CNRI, at its sole discretion, 
+may provide updates to the Handle System Technology, in particular 
+updates to HDL Software, and CNRI will post any such updates at 
+<http://www.handle.net>. With respect to updates to HDL Software, it 
+is Licensee's sole responsibility to install such updates promptly. 
+
+5. Trademarks: Handle System, Global Handle Registry, Handle.net and 
+CNRI are registered trademarks of CNRI, and CNRI may have or adopt 
+other marks related to the Handle System Technology or the services 
+described herein ("CNRI Trademarks"). The CNRI Trademarks may not be 
+used in a trademark sense or to endorse or promote any software, 
+services or products of Licensee, or any third party, except with 
+prior written approval of CNRI, which it may grant or deny at its sole 
+discretion. Inquiries concerning use of CNRI's Trademarks should be 
+addressed to the Handle System Administrator at 
+hdladmin@cnri.reston.va.us.
+
+6. Disclaimer of Warranties: CNRI IS PROVIDING THE HANDLE SYSTEM 
+TECHNOLOGY, INCLUDING, WITHOUT LIMITATION, HDL SOFTWARE, ON AN "AS IS" 
+BASIS. CNRI  EXPRESSLY DISCLAIMS AND EXCLUDES ALL WARRANTIES, 
+INCLUDING, WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY, OF 
+SATISFACTORY QUALITY, AND OF FITNESS FOR A PARTICULAR PURPOSE OR USE. 
+CNRI MAKES NO REPRESENTATION AND DISCLAIMS ANY WARRANTY THAT THE 
+HANDLE SYSTEM TECHNOLOGY, INCLUDING HDL SOFTWARE AND ANY MODIFICATIONS 
+OR ENHANCEMENTS THEREOF OR DERIVATIVE WORKS BASED THEREON, WILL NOT 
+INFRINGE ANY PATENT, COPYRIGHT, TRADEMARK, TRADE SECRET OR OTHER 
+PROPRIETARY RIGHT. 
+
+7. Limitation on Liability: CNRI WILL NOT BE LIABLE TO LICENSEE OR 
+THIRD PARTIES FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, 
+CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY CHARACTER 
+INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES, LOSS OF USER DATA OR PROFITS, OR BUSINESS INTERRUPTION, 
+HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING 
+BUT NOT LIMITED TO NEGLIGENCE AND INFRINGEMENT OR MISAPPROPRIATION 
+OF INTELLECTUAL PROPERTY RIGHTS), PRODUCT LIABILITY OR OTHERWISE, 
+BASED ON OR ARISING IN ANY WAY OUT OF THE PERFORMANCE OF THE RIGHTS AND 
+OBLIGATIONS OF THE PARTIES UNDER THIS HSPL (VER.2), EVEN IF CNRI IS 
+ADVISED OR IS OTHERWISE AWARE OF THE POSSIBILITY OF SUCH DAMAGES. 
+
+8. HSPL Versions: CNRI may publish revised and/or new versions of the 
+Handle System Public License Agreement ("HSPL") from time to time. Each 
+version will be given a distinguishing version number. Once HDL Software 
+has been made available under a particular version of the HSPL, Licensee 
+may continue to use it under the terms of that version. No one other 
+than CNRI has the right to modify the terms of the HSPL. 
+
+9. Export Restrictions: HDL Software provided to Licensee under this 
+HSPL (Ver.2), and any updates to HDL Software, are subject to United 
+States export control laws and may be subject to export or import 
+regulations in other countries. Licensee agrees to comply with such 
+laws and regulations and shall be responsible for obtaining any and 
+all required export and import documentation. 
+
+10. Termination: This HSPL (Ver.2) may be terminated, at CNRI's sole 
+discretion, upon a material breach of its terms and conditions by 
+Licensee. 
+
+11. General: To the extent Federal law is not applicable, this 
+HSPL (Ver.2) shall be governed by and interpreted in all respects in 
+accordance with the law of the Commonwealth of Virginia, excluding 
+Virginia conflict of law provisions, and the courts within such State 
+shall be the only courts of competent jurisdiction. Nothing in this 
+HSPL (Ver.2) shall be deemed to create any relationship of agency, 
+partnership, or joint venture between CNRI and Licensee. 

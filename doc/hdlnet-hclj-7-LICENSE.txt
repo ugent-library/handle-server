@@ -1,0 +1,18 @@
+HANDLE.NET(R) SOFTWARE Client Library -- JavaTM Version
+
+1. This LICENSE AGREEMENT is between the Corporation for National Research Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191-5434 ("CNRI"), and the Individual or Organization ("Licensee") that has installed or otherwise used the HANDLE.NET: CLIENT LIBRARY - Java Version ("Software"). Licensee shall be deemed to have entered into, signed and agreed to be bound by the terms and conditions of the License Agreement upon such installation or other use. 
+ 
+2. Subject to the terms and conditions of this License Agreement, CNRI hereby grants Licensee a nonexclusive, worldwide, royalty-free license to install, reproduce, modify, display and/or perform publicly, prepare derivative works, and distribute the Software to the public, with or without modification, in source or binary form, provided, however, that CNRI's copyright notice: "Copyright (c) 2010 Corporation for National Research Initiatives; All Rights Reserved" and the following text (omitting the quotes), are both retained in the Software alone or in any derivative version prepared by Licensee:
+                                                                      
+"HANDLE.NET: CLIENT LIBRARY - Java Version is made available subject to CNRI's License Agreement located at: hdl:4263537/5042; it may also be obtained at: http://hdl.handle.net/4263537/5042."
+ 
+3. CNRI is making the Software available to Licensee on an "AS IS" basis. CNRI MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, CNRI MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE WILL NOT INFRINGE ANY THIRD PARTY RIGHTS. 
+ 
+4. CNRI SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USER OF THS SOFTWARE FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THE SOFTWARE, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF. 
+ 
+5. This License Agreement will automatically terminate upon a material breach of its terms and conditions. 
+ 
+6. This License Agreement shall be governed by and interpreted in all respects by the law of the State of Virginia, excluding Virginia's conflict of law provisions. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between CNRI and Licensee. This License Agreement does not grant permission to use CNRI trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party. 
+ 
+ 
+ 

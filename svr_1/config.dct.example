@@ -34,7 +34,7 @@
 "storage_type" = "sql"
 "sql_settings" = {
   "sql_url" = "jdbc:mysql://localhost/handle"
-  "sql_driver" = "org.gjt.mm.mysql.Driver"
+  "sql_driver" = "com.mysql.jdbc.Driver"
   "sql_login" = ""
   "sql_passwd" = ""
   "sql_read_only" = "no"

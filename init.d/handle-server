@@ -10,7 +10,7 @@ SCRIPT="$(basename $0)"
 JAVA="/usr/bin/java"
 PROJ_DIR="/opt/handle-server"
 SERVER="svr_1"
-COMMAND="$JAVA -cp ${PROJ_DIR}/bin/handle.jar:${PROJ_DIR}/bin/mysql-connector-java-3.1.7-bin.jar net.handle.server.Main ${PROJ_DIR}/${SERVER}"
+COMMAND="${PROJ_DIR}/bin/hdl-server ${PROJ_DIR}/${SERVER}"
 
 lock_file="/var/lock/subsys/$SCRIPT"
 
