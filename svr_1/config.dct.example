@@ -34,9 +34,9 @@
 "storage_type" = "sql"
 "sql_settings" = {
   "sql_url" = "jdbc:mysql://localhost/handle"
-  "sql_driver" = "com.mysql.jdbc.Driver"
-  "sql_login" = ""
-  "sql_passwd" = ""
+  "sql_driver" = "org.gjt.mm.mysql.Driver"
+  "sql_login" = "handle"
+  "sql_passwd" = "password"
   "sql_read_only" = "no"
 }
 "server_admins" = (
@@ -55,5 +55,12 @@
 )
 
 "case_sensitive" = "no"
+}
+
+log_save_config = {
+log_save_interval = "Monthly"
+log_save_directory = "/var/log/handle-server/"
+}
+
 }
 
