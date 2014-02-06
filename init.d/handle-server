@@ -1,6 +1,4 @@
-#!/bin/sh
-#
-# chkconfig: 345 98 02
+kconfig: 345 98 02
 # description: Handle server
 #
 . /etc/rc.d/init.d/functions
@@ -11,6 +9,7 @@ JAVA="/usr/bin/java"
 PROJ_DIR="/opt/handle-server"
 SERVER="svr_1"
 COMMAND="${PROJ_DIR}/bin/hdl-server ${PROJ_DIR}/${SERVER}"
+PATTERN="^java -server.+${PROJ_DIR}/${SERVER}$"
 
 lock_file="/var/lock/subsys/$SCRIPT"
 
@@ -36,10 +35,11 @@ do_start()
 do_stop()
 {
         echo -n $"Stopping $SCRIPT: "
-        pkill -9 -fx "$COMMAND" > /dev/null 2>&1
+        pkill -9 -f "$PATTERN" > /dev/null 2>&1
         RETVAL=$?
         if [ $RETVAL -eq 0 ]; then
           rm -f $lock_file
+          rm -f "${PROJ_DIR}/${SERVER}/txns/lock"
           echo_success
         else
           echo_failure
@@ -49,7 +49,7 @@ do_stop()
 
 do_status()
 {
-        PID=`pgrep -fx "$COMMAND"`
+        PID=`pgrep -f "$PATTERN"`
         RETVAL=$?
         if [ $RETVAL -eq 0 ]; then
           echo "$SCRIPT is running"
