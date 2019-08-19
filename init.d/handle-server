@@ -8,6 +8,7 @@
 
 SCRIPT="$(basename $0)"
 
+USER="handle-server"
 JAVA="/usr/bin/java"
 PROJ_DIR="/opt/handle-server"
 SERVER="svr_1"
@@ -20,7 +21,7 @@ do_start()
 {
         if [ ! -f "$lock_file" ] ; then
                 echo -n $"Starting $SCRIPT: "
-                $COMMAND >> /var/log/handle-server/${SERVER}.log 2>&1 &
+                runuser -l "$USER" -s /bin/sh -c "$COMMAND" >> /var/log/handle-server/${SERVER}.log 2>&1 &
                 RETVAL=$?
                 if [ $RETVAL -eq 0 ]; then
                   touch $lock_file

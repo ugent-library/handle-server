@@ -33,33 +33,35 @@ echo "Complete!"
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root,-)
+%defattr(-,%{name},%{name},-)
 /opt/%{name}/
-%attr(755, -, -) /etc/init.d/%{name}
 /var/log/%{name}
+%attr(755, root, root)/etc/init.d/%{name}
 
 %doc
 
 %pre
-#in case of an upgrade (first installs new version, then deletes old version)
-service %{name} stop &> /dev/null
-chkconfig --del %{name} &> /dev/null
+getent group %{name} > /dev/null || groupadd -r %{name}
+getent passwd %{name} > /dev/null || useradd -r -g %{name} -G apache \
+    -d /home/%{name} -s /sbin/nologin -c "%{name} user" %{name}
+
+has_service=$(chkconfig --list | grep %{name})
+if [ "$has_service" != "" ];then
+  chkconfig --del %{name} &> /dev/null
+fi
 exit 0
 
 %post
 (
-chkconfig --add %{name} && chkconfig --level 345 %{name} on && service %{name} start &&
+chkconfig --add %{name} && chkconfig --level 345 %{name} on &&
 echo "service %{name} installed!"
 ) || exit 1
 
 %preun
-service %{name} stop &> /dev/null
 chkconfig --del %{name} &> /dev/null
 echo "service %{name} removed"
 exit 0
 
 %postun
-service %{name} restart &> /dev/null
-exit 0
 
 %changelog
