@@ -43,7 +43,7 @@ rm -rf %{buildroot}
 %pre
 getent group %{name} > /dev/null || groupadd -r %{name}
 getent passwd %{name} > /dev/null || useradd -r -g %{name} -G apache \
-    -d /home/%{name} -s /sbin/nologin -c "%{name} user" %{name}
+    -m -s /sbin/nologin -c "%{name} user" %{name}
 
 has_service=$(chkconfig --list | grep %{name})
 if [ "$has_service" != "" ];then
