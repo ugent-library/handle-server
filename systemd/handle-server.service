@@ -6,7 +6,8 @@ After=network.target
 Type=simple
 User=handle-server
 Group=handle-server
-ExecStart=/opt/handle-server/bin/hdl-server /opt/handle-server/svr_1 &>> /var/log/handle-server/svr_1.log
+#TODO: file redirection incorrectly interpreted because of internal "exec"?
+ExecStart=/opt/handle-server/bin/hdl-server /opt/handle-server/svr_1
 Restart=always
 
 [Install]

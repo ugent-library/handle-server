@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 %defattr(-,%{name},%{name},-)
 /opt/%{name}/
 /var/log/%{name}
-%attr(755,root,root) /etc/systemd/system
+%attr(444,root,root) /etc/systemd/system/%{name}.service
 
 %doc
 
