@@ -1,0 +1,13 @@
+[Unit]
+Description=handle-server
+After=network.target
+
+[Service]
+Type=simple
+User=handle-server
+Group=handle-server
+ExecStart=/opt/handle-server/bin/hdl-server /opt/handle-server/svr_1 &>> /var/log/handle-server/svr_1.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
