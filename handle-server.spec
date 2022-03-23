@@ -21,11 +21,11 @@ echo "nothing to build"
 rm -rf %{buildroot}
 
 mkdir -p %{buildroot}/opt/%{name}
-mkdir -p %{buildroot}/etc/init.d
+mkdir -p %{buildroot}/etc/systemd/system/
 mkdir -p %{buildroot}/var/log/%{name}
 
 cp -r $RPM_BUILD_DIR/%{name}/* %{buildroot}/opt/%{name}/
-cp $RPM_BUILD_DIR/%{name}/init.d/%{name} %{buildroot}/etc/init.d/%{name}
+cp $RPM_BUILD_DIR/%{name}/systemd/%{name}.service %{buildroot}/etc/systemd/system/
 
 echo "Complete!"
 
@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 %defattr(-,%{name},%{name},-)
 /opt/%{name}/
 /var/log/%{name}
-%attr(755, root, root)/etc/init.d/%{name}
+%attr(444,root,root) /etc/systemd/system/%{name}.service
 
 %doc
 
@@ -45,23 +45,19 @@ getent group %{name} > /dev/null || groupadd -r %{name}
 getent passwd %{name} > /dev/null || useradd -r -g %{name} -G apache \
     -m -s /sbin/nologin -c "%{name} user" %{name}
 
-has_service=$(chkconfig --list | grep %{name})
-if [ "$has_service" != "" ];then
-  chkconfig --del %{name} &> /dev/null
-fi
 exit 0
 
 %post
-(
-chkconfig --add %{name} && chkconfig --level 345 %{name} on &&
-echo "service %{name} installed!"
-) || exit 1
-
-%preun
-chkconfig --del %{name} &> /dev/null
-echo "service %{name} removed"
+systemctl daemon-reload &&
+systemctl enable %{name} &&
+systemctl restart %{name}
 exit 0
 
-%postun
+%preun
+if [ "$1" = 0 ] ; then
+  systemctl stop %{name}
+  systemctl disable %{name}
+fi
+exit 0
 
 %changelog
