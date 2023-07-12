@@ -1,0 +1,10 @@
+/.git
+/svr_1/logs
+/doc
+/src.zip
+/handle-server.spec
+/Dockerfile
+/systemd
+/svr_1/config.dct
+/svr_1/txns/*
+/svr_1/txn_id

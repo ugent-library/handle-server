@@ -1,0 +1,42 @@
+version: '3.5'
+
+services:
+  handle_server:
+    image: handle-server
+    container_name: handle-server
+    depends_on:
+      postgres:
+        condition: service_healthy
+    expose:
+      #- 8000 # HTTP: see docker/config.dct:interfaces
+      - 2641 # TCP/UDP
+    ports:
+      - 2641:2641
+    volumes:
+      - ./docker/config.dct:/opt/handle-server/svr_1/config.dct
+      - ./svr_1/logs:/opt/handle-server/svr_1/logs
+    command: "/opt/handle-server/bin/hdl-server /opt/handle-server/svr_1"
+
+  # connect to postgres:
+  #   connect to docker container
+  #   switch to postgres user: su - postgres
+  #   login as user "handle": psql -U handle
+  postgres:
+    container_name: postgres14
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_DB: handle
+      POSTGRES_USER: handle
+      POSTGRES_PASSWORD: handle
+    volumes:
+      - ./db/pg:/docker-entrypoint-initdb.d/pg
+      - ./docker/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+      - postgres-handle-server:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "/usr/local/bin/pg_isready", "-U", "handle"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
+
+volumes:
+  postgres-handle-server:
